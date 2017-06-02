@@ -1,0 +1,179 @@
+/*Use the following colors for your layout:
+
+text: #0B1942
+inline link: #00B7D3
+h2 background: #0B1942
+h2 color: #FFFFFF
+logo background: #F5005B
+navigation background: #7DDFE8
+navigation link color: #FFFFFF
+"Home" nav link background: #00A5BF
+"Calendar" nav link background: #00B7D3
+"Join" nav link background: #00D5E7
+"Up Next" background: #0B1942
+"Up Next" card background #E2E2E2
+calendar background and treatments: #0B1942
+calendar highlighted day: #F5005B
+button background: #F5005B
+copyright text: #FFFFFF
+
+breakpoint range (start, stop):
+small:	0 (320px)	544px
+medium: 545px-768px
+large: 769px & above
+
+*/
+
+/* --- INITIAL TEMPLATE SIZES AND MOBILE SITE BELOW --- */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*, *:before, *after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: auto;
+	font-family: 'PT Sans', sans-serif;
+	min-width: 320px;
+	color: #0B1942;
+}
+
+.site-header {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+}
+
+.logo-container {
+	background: url(../images/filmclub.png);
+  background-repeat: no-repeat;
+  background-color: #F5005B;
+  background-size: 85%;
+  background-position: 23px 30px;
+  flex: 1;
+  height: 370px;
+}
+
+.navigation {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 2; 
+}
+
+.links {
+	display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 2em;
+	
+}
+
+#link-home {
+	background-color: #00A5BF;
+}
+
+#link-cal {
+	background-color: #00B7D3;
+}
+
+#link-join {
+	background-color: #00D5E7;
+}
+
+/* MAIN TEXT SECTION AND SUB-HEADLINES HERE: */
+
+article {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 5%;
+}
+
+h1 {
+	font-size: 4em;
+  font-weight: lighter;
+  padding-bottom: 3%;
+}
+
+h2 {
+	background-color: #0B1942;
+  color: #FFFFFF;
+  padding: 2% 4%;
+  font-weight: 300;
+  font-size: 3em;
+}
+
+article > div > p {
+	padding: 4% 0%;
+}
+
+/* --- UP NEXT AND MOVIES BELOW --- */
+
+section {
+	display: flex;
+	flex-direction: column;
+	background-color: #0B1942;
+	color: #FFFFFF;
+	padding: 3% 5%;
+}
+
+.up-next {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background: #E2E2E2;
+	color: #0B1942;
+	padding: 5%;
+}
+
+#up-next-pic {
+	width: 40vw;
+  height: auto;
+}
+
+.up-next-descrip {
+	
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+	height: auto;
+  font-size: 2em;
+  padding: 0% 5%;
+  line-height: 2em;
+}	
+
+.up-next-descrip > a {
+	color: #00B7D3;
+	font-size: 2.5rem;
+}
+
+.up-next-descrip > p {
+	padding: 10% 0 10% 0%;
+}
+
+.film-club {
+	border-bottom: 2px solid black;
+  font-size: 0.9em;
+  padding: 0% 0% 0% 20%;
+}
+
+.list {
+	padding: 0% 0% 0% 20%;
+}
+
+.repertory {
+	background: #FFFFFF;
+	color: #0B1942;
+	padding: 5%
+}
