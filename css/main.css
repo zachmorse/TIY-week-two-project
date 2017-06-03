@@ -78,7 +78,13 @@ body {
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 2em;
-	
+}
+
+.color-filler {
+	background-color: #79E0E7;
+	width: 100%;
+	flex: 0;	
+
 }
 
 #link-home {
