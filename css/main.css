@@ -43,6 +43,8 @@ body {
 	color: #0B1942;
 }
 
+
+
 .site-header {
 	display: flex;
 	flex-direction: row;
@@ -118,14 +120,14 @@ article > div > p {
 	padding: 4% 0%;
 }
 
-/* --- UP NEXT AND MOVIES BELOW --- */
+/* --- UP NEXT SECTION BELOW --- */
 
 section {
 	display: flex;
 	flex-direction: column;
 	background-color: #0B1942;
 	color: #FFFFFF;
-	padding: 3% 5%;
+	padding: 3% 5% 5% 5%;
 }
 
 .up-next {
@@ -135,6 +137,7 @@ section {
 	background: #E2E2E2;
 	color: #0B1942;
 	padding: 5%;
+	margin-bottom: 5%;
 }
 
 #up-next-pic {
@@ -172,8 +175,121 @@ section {
 	padding: 0% 0% 0% 20%;
 }
 
+/* ---UPCOMING MOVIES SECTION BELOW --- */ 
+
 .repertory {
-	background: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: #E2E2E2;
 	color: #0B1942;
-	padding: 5%
+	padding: 4% 0% 0% 4%;
 }
+
+.upcoming-posters {
+	justify-content: center;
+	align-items: center;
+	flex: 1 1 50%;
+	width: 40vw;
+	height: auto;
+	line-height: 2rem;
+	padding-bottom: 4%;	
+}
+
+.poster {
+	width: 40vw;
+}
+
+.upcoming-posters > a , p {
+	line-height: 3rem;
+}
+
+#preview-links {
+	color: #00B7D3;
+	font-size: 2.2rem;
+	line-height: 4rem;
+	
+}
+
+.upcoming-posters > p {
+	font-size: 2rem;
+}
+
+/* --- FOOTER SECTION BELOW --- */
+
+footer {
+	display: flex;
+	width: 100vw;
+	flex-direction: column;
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: column;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 2em;
+	padding: 2vw 0;
+}
+
+.copyright {
+	background-color: #79E0E7;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 2rem;
+  padding: 6vw;
+}
+
+/* ----------------------------------------- */
+/* --- TABLET CHANGES AND RESIZING BELOW --- */
+/* ----------------------------------------- */
+
+@media screen and (min-width: 545px) {
+
+	.site-header {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+}
+
+.logo-container {
+	background: url(../images/filmclub.png);
+  background-repeat: no-repeat;
+  background-color: #F5005B;
+  background-size: 85%;
+  background-position: 23px 30px;
+  flex: 1;
+  height: 370px;
+}
+
+.navigation {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 2; 
+}
+
+.links {
+	display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 2em;
+	
+}
+
+
+
+}
+
+
