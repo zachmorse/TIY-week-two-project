@@ -383,7 +383,6 @@ footer {
 		align-items: center;
 		flex: 1 1 25%;
 		width: 40vw;
-		/*height: auto;*/
 		line-height: 1rem;
 		padding-bottom: 4%;	
 	}
@@ -404,9 +403,6 @@ footer {
 
 	/* FOOTER SECTION BELOW: */
 
-	
-	
-	
 		footer {
 		display: flex;
 		width: 100vw;
@@ -418,8 +414,6 @@ footer {
     flex: 1;
     height: 15vw;
     width: 100%;
-    /*justify-content: center;
-    align-items: center;*/
     text-decoration: none;
     color: #FFFFFF;
     font-size: 2.5vw;
@@ -440,11 +434,165 @@ footer {
 		flex: 4;
 	}
 
-
-	
-
-
-
-
-
 }
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* --- LAPTOP CHANGES AND RESIZING BELOW: --- */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+@media (min-width: 769px) {
+
+	/* NAV LINKS BELOW */
+
+	.links {
+		font-size: 1.5vw;
+	}
+	.color-filler {
+		flex: 5;
+	}
+
+	/* ARTICLE SECTION BELOW */
+
+	h1 {
+		font-size: 1.9em;
+    font-weight: lighter;
+    padding: 3% 2%;
+	}
+
+	article {
+		padding: 0%;
+	}
+
+	article > div {
+		flex: 1;
+    padding: 0% 2% 2% 2%; 
+	}
+
+	/* UP NEXT SECTION BELOW */
+
+	section {
+		display: flex;
+		flex-direction: row;
+		background-color: #0B1942;
+		color: #FFFFFF;
+		padding: 3% 5% 5% 5%;
+		flex-wrap: wrap;
+	}
+
+	.up-next-header {
+		font-size: 1.9em;
+		font-weight: lighter;
+		padding: 2% 5% 5% 5%;
+	}
+
+	.up-next {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		background: #E2E2E2;
+		color: #0B1942;
+		padding: 5%;
+		margin-bottom: 5%;
+		flex: 1;								/* alterations */
+		width: 40vh;
+
+	}
+
+	.now-playing-img {
+		flex: 1;
+	}
+
+	#up-next-pic {
+		width: 39vw;
+		height: auto;
+		
+	}
+
+	.up-next-descrip {
+		display: flex;
+		flex-direction: column;
+		width: 40vw;
+		height: auto;
+		font-size: 1em;
+		padding: 2% 0% 2% 5%;
+		line-height: 1em;
+		flex: 1;
+	}	
+
+	.up-next-descrip > a {
+		color: #00B7D3;
+		font-size: 6vw;
+		padding: 0% 0% 4% 0%;
+	}
+
+	.up-next-descrip > p {
+		padding: 10% 0%;
+	}
+
+	.film-club {
+		border-bottom: 1px solid black;
+		font-size: 0.9em;
+		padding: 0% 0% 0% 20%;
+	}
+
+	.list {
+		padding: 0% 0% 0% 20%;
+		line-height: 7vw;
+		font-size: 3vw;
+	}
+
+	.repertory {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: #E2E2E2;
+	color: #0B1942;
+	padding: 4% 0% 0% 4%;
+	flex: 1;
+	width: 40vh;
+}
+
+.upcoming-posters {
+	justify-content: center;
+	align-items: center;
+	flex: 1 1 50%;
+	width: 40vw;
+	height: auto;
+	line-height: 1rem;
+	padding-bottom: 4%;	
+}
+
+.poster {
+	width: 40vw;
+}
+
+.upcoming-posters > a , p {
+	line-height: 1rem;
+}
+
+#preview-links {
+	color: #00B7D3;
+	font-size: 3.5vw;
+	line-height: 6vw;	
+}
+
+.upcoming-posters > p {
+	font-size: 3vw;
+}
+
+} 
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ----- CALENDAR PAGE WORK BEGINS HERE ----- */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+
+
+
+
