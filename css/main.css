@@ -36,6 +36,8 @@ large: 769px & above
 	box-sizing: inherit;
 }
 
+@media (min-width:0px), (max-width: 544px) {
+
 body {
 	margin: auto;
 	font-family: 'PT Sans', sans-serif;
@@ -43,22 +45,20 @@ body {
 	color: #0B1942;
 }
 
-
-
 .site-header {
 	display: flex;
 	flex-direction: row;
-	width: 100vw;
+	width: 100vw;	
 }
 
 .logo-container {
 	background: url(../images/filmclub.png);
   background-repeat: no-repeat;
   background-color: #F5005B;
-  background-size: 85%;
-  background-position: 23px 30px;
-  flex: 1;
-  height: 370px;
+  background-size: 76%;
+  background-position: 15px 8px;
+  height: 120px;
+  width: 120px;
 }
 
 .navigation {
@@ -77,14 +77,13 @@ body {
   align-items: center;
 	text-decoration: none;
 	color: #FFFFFF;
-	font-size: 2em;
+	font-size: 3vw;
 }
 
 .color-filler {
 	background-color: #79E0E7;
-	width: 100%;
+	
 	flex: 0;	
-
 }
 
 #link-home {
@@ -105,25 +104,26 @@ article {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding: 5%;
+	padding: 0% 5% 5% 5%;
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 1.9em;
   font-weight: lighter;
-  padding-bottom: 3%;
+  padding: 5%;
 }
 
 h2 {
 	background-color: #0B1942;
   color: #FFFFFF;
   padding: 2% 4%;
-  font-weight: 300;
-  font-size: 3em;
+  font-weight: lighter;
+  font-size: 1.4em;
 }
 
 article > div > p {
 	padding: 4% 0%;
+	line-height: 1.5rem;
 }
 
 /* --- UP NEXT SECTION BELOW --- */
@@ -136,6 +136,13 @@ section {
 	padding: 3% 5% 5% 5%;
 }
 
+.up-next-header {
+	font-size: 1.9em;
+  font-weight: lighter;
+  padding: 2% 5% 5% 5%;
+}
+
+
 .up-next {
 	display: flex;
 	flex-direction: row;
@@ -146,9 +153,14 @@ section {
 	margin-bottom: 5%;
 }
 
+.now-playing-img {
+	flex: 1;
+}
+
 #up-next-pic {
-	width: 40vw;
+	width: 39vw;
   height: auto;
+	
 }
 
 .up-next-descrip {
@@ -157,28 +169,32 @@ section {
   flex-direction: column;
   width: 40vw;
 	height: auto;
-  font-size: 2em;
-  padding: 0% 5%;
-  line-height: 2em;
+  font-size: 1em;
+  padding: 2% 0% 2% 5%;
+  line-height: 1em;
+	flex: 1;
 }	
 
 .up-next-descrip > a {
 	color: #00B7D3;
-	font-size: 2.5rem;
+	font-size: 6vw;
+	padding: 0% 0% 4% 0%;
 }
 
 .up-next-descrip > p {
-	padding: 10% 0 10% 0%;
+	padding: 10% 0%;
 }
 
 .film-club {
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
   font-size: 0.9em;
   padding: 0% 0% 0% 20%;
 }
 
 .list {
 	padding: 0% 0% 0% 20%;
+	line-height: 7vw;
+  font-size: 3vw;
 }
 
 /* ---UPCOMING MOVIES SECTION BELOW --- */ 
@@ -200,7 +216,7 @@ section {
 	flex: 1 1 50%;
 	width: 40vw;
 	height: auto;
-	line-height: 2rem;
+	line-height: 1rem;
 	padding-bottom: 4%;	
 }
 
@@ -209,18 +225,17 @@ section {
 }
 
 .upcoming-posters > a , p {
-	line-height: 3rem;
+	line-height: 1rem;
 }
 
 #preview-links {
 	color: #00B7D3;
-	font-size: 2.2rem;
-	line-height: 4rem;
-	
+	font-size: 3.5vw;
+	line-height: 6vw;	
 }
 
 .upcoming-posters > p {
-	font-size: 2rem;
+	font-size: 3vw;
 }
 
 /* --- FOOTER SECTION BELOW --- */
@@ -240,7 +255,7 @@ footer {
   align-items: center;
 	text-decoration: none;
 	color: #FFFFFF;
-	font-size: 2em;
+	font-size: 3.5vw;
 	padding: 2vw 0;
 }
 
@@ -248,54 +263,188 @@ footer {
 	background-color: #79E0E7;
 	color: #FFFFFF;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 3.5vw;
   padding: 6vw;
 }
 
-/* ----------------------------------------- */
-/* --- TABLET CHANGES AND RESIZING BELOW --- */
-/* ----------------------------------------- */
+}
 
-@media screen and (min-width: 545px) {
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* --- TABLET CHANGES AND RESIZING BELOW: --- */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+@media (min-width: 545px) {
 
 	.site-header {
 	display: flex;
 	flex-direction: row;
-	width: 100vw;
+	width: 100vw;	
 }
-
-.logo-container {
-	background: url(../images/filmclub.png);
-  background-repeat: no-repeat;
-  background-color: #F5005B;
-  background-size: 85%;
-  background-position: 23px 30px;
-  flex: 1;
-  height: 370px;
-}
-
-.navigation {
-	display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 2; 
-}
-
-.links {
-	display: flex;
-  flex: 1;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-	text-decoration: none;
-	color: #FFFFFF;
-	font-size: 2em;
 	
+	.navigation {
+		display: flex;
+  	flex-direction: row;
+  	justify-content: flex-start;
+  	flex: 1; 
+	}
+
+	.links {
+		display: flex;
+  	flex: 1;
+		height: 100%;
+  	justify-content: center;
+  	align-items: center;
+		text-decoration: none;
+		color: #FFFFFF;
+		font-size: 2.5vw;
+	}
+
+	.color-filler {
+		background-color: #79E0E7;
+		width: 100%;
+		height: 100%;
+		flex: 3;	
+	}
+
+	/* article section below: */
+
+	article {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		padding: 0% 3% 3% 3%;
+	}
+
+	article > div {
+		flex: 1;
+		padding: 0% 2%;
+	}
+
+	h1 {
+		font-size: 1.9em;
+		font-weight: lighter;
+		padding: 3% 5%;
+	}
+
+	h2 {
+		background-color: #0B1942;
+		color: #FFFFFF;
+		padding: 2% 4%;
+		font-weight: lighter;
+		font-size: 1.4em;
+	}
+
+	article > div > p {
+		padding: 4% 0%;
+		line-height: 1.5rem;
+	}
+
+/* Up Next section below */
+
+	section {
+		padding: 0% 5% 5% 5%;
+	}
+
+	.up-next {
+		font-size: 0.8rem;
+	}
+
+	.up-next-descrip > a {
+		font-size: 1.2rem;
+		padding-top: 2%;
+	}
+
+	.up-next-descrip > p {
+		padding: 7% 0%;
+	}
+	.list {
+		padding: 0% 0% 0% 5%;
+    line-height: 4vw;
+    font-size: 2vw;
+	}
+
+/* UPCOMING MOVIES BELOW: */
+
+	.repertory {
+		display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: #E2E2E2;
+    color: #0B1942;
+    padding: 4% 0% 0% 4%;
+	}
+
+	.upcoming-posters {
+		justify-content: center;
+		align-items: center;
+		flex: 1 1 25%;
+		width: 40vw;
+		/*height: auto;*/
+		line-height: 1rem;
+		padding-bottom: 4%;	
+	}
+
+	.upcoming-posters > p {
+		font-size: 2vw;
+    padding-top: 1vw;
+	}
+	.poster {
+		width: 20vw;	
+	}
+
+	#preview-links {
+		color: #00B7D3;
+    font-size: 2.2vw;
+    line-height: 4vw;
+	}
+
+	/* FOOTER SECTION BELOW: */
+
+	
+	
+	
+		footer {
+		display: flex;
+		width: 100vw;
+		flex-direction: row;
+	}
+
+	.footer-links {
+		display: flex;
+    flex: 1;
+    height: 15vw;
+    width: 100%;
+    /*justify-content: center;
+    align-items: center;*/
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 2.5vw;
+	}
+
+	.copyright-text {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex: 4;
+	}
+	.copyright {
+		background-color: #79E0E7;
+		color: #FFFFFF;
+		height: 15vw;
+		font-size: 2.5vw;
+		padding: 6vw;
+		flex: 4;
+	}
+
+
+	
+
+
+
+
+
 }
-
-
-
-}
-
-
