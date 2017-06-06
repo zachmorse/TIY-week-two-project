@@ -380,7 +380,7 @@ footer {
     align-items: flex-start;
     background: #E2E2E2;
     color: #0B1942;
-    padding: 4% 0% 0% 4%;
+    padding: 4% 0% 0% 2%;
 	}
 
 	.upcoming-posters {
@@ -389,7 +389,7 @@ footer {
 		flex: 1 1 25%;
 		width: 40vw;
 		line-height: 1rem;
-		padding-bottom: 4%;	
+		padding-bottom: 2%;	
 	}
 
 	.upcoming-posters > p {
@@ -558,6 +558,7 @@ footer {
 		flex: 6;
 	}
 } 
+
 /* ------------------------------------------ */
 /* ------------------------------------------ */
 /* ----- CALENDAR PAGE WORK BEGINS HERE ----- */
@@ -617,4 +618,11 @@ footer {
 #active {
 	background: #F5005B;
 }
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------- JOIN PAGE WORK BEGINS HERE ------- */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
 
