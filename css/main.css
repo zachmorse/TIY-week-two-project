@@ -408,35 +408,37 @@ footer {
 
 	/* FOOTER SECTION BELOW: */
 
-		footer {
-		display: flex;
-		width: 100vw;
-		flex-direction: row;
+	footer {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    height: 100px;
 	}
 
 	.footer-links {
-		display: flex;
+    display: flex;
     flex: 1;
-    height: 15vw;
+    max-height: 100px;
     width: 100%;
     text-decoration: none;
     color: #FFFFFF;
     font-size: 2vw;
-	}
+	}	
 
 	.copyright-text {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 5;
+    background-color: #79E0E7;
 	}
+	
 	.copyright {
-		background-color: #79E0E7;
-		color: #FFFFFF;
-		height: 15vw;
-		font-size: 2vw;
-		padding: 6vw;
-		flex: 4;
+    color: #FFFFFF;
+    font-size: 2vw;
+    padding: 0vw 1vw 0vw 0vw;
+    flex: 1;
+    text-align: right;
 	}
 
 }
@@ -477,120 +479,85 @@ footer {
 
 	/* UP NEXT SECTION BELOW */
 
-	.up-next-header {
-    font-size: 1.9em;
-    font-weight: lighter;
-    padding: 2% 5% 0% 5%;
-	}
-	
 	section {
-		display: flex;
-		flex-direction: row;
-		background-color: #0B1942;
-		color: #FFFFFF;
-		padding: 3% 5% 5% 5%;
-		flex-wrap: wrap;
-	}
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 2vw 5vw 2vw;
+	}	
 
 	.up-next {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		background: #E2E2E2;
-		color: #0B1942;
-		padding: 5%;
-		margin-bottom: 5%;
-		flex: 1;								/* alterations */
-		width: 40vh;
-
-	}
-
-	.now-playing-img {
-		flex: 1;
+    font-size: 0.8rem;
+    height: 32vw;
+    margin-right: 2vw;
+    flex: 1;
+    padding: 2%;
 	}
 
 	#up-next-pic {
-		width: 39vw;
-		height: auto;
-		
+  	width: 20vw;
+  	height: auto;
 	}
 
 	.up-next-descrip {
-		display: flex;
-		flex-direction: column;
-		width: 40vw;
-		height: auto;
-		font-size: 1em;
-		padding: 2% 0% 2% 5%;
-		line-height: 1em;
-		flex: 1;
-	}	
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+    height: auto;
+    font-size: 1em;
+    padding: 2% 0% 0% 2%;
+    line-height: 1em;
+    flex: 1;
+	}
 
 	.up-next-descrip > a {
-		color: #00B7D3;
-		font-size: 6vw;
-		padding: 0% 0% 4% 0%;
+    font-size: 1.5rem;
+    padding-top: 2%;
 	}
-
+	
 	.up-next-descrip > p {
-		padding: 10% 0%;
+    padding: 5% 0%;
 	}
 
-	.film-club {
-		border-bottom: 1px solid black;
-		font-size: 0.9em;
-		padding: 0% 0% 0% 20%;
-	}
-
-	.list {
-		padding: 0% 0% 0% 20%;
-		line-height: 7vw;
-		font-size: 3vw;
+	.topic-list {
+    padding: 0% 0% 0% 10%;
+    line-height: 3vw;
+    font-size: 1.5vw;
 	}
 
 	.repertory {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	background: #E2E2E2;
-	color: #0B1942;
-	padding: 4% 0% 0% 4%;
-	flex: 1;
-	width: 40vh;
-}
+    padding-top: 2%;
+    flex: 1;
+	}
 
-.upcoming-posters {
-	justify-content: center;
-	align-items: center;
-	flex: 1 1 50%;
-	width: 40vw;
-	height: auto;
-	line-height: 1rem;
-	padding-bottom: 4%;	
-}
+	.poster {
+    width: 20vw;
+	}
 
-.poster {
-	width: 40vw;
-}
+	#preview-links {
+    font-size: 1.8vw;
+    line-height: 3vw;
+	}
 
-.upcoming-posters > a , p {
-	line-height: 1rem;
-}
+	.upcoming-posters > p {
+    font-size: 1.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 1.5vw;
+	}	
 
-#preview-links {
-	color: #00B7D3;
-	font-size: 3.5vw;
-	line-height: 6vw;	
-}
+/* Footer changes below: */
 
-.upcoming-posters > p {
-	font-size: 3vw;
-}
+	.footer-links {
+		font-size: 1.5vw;
+	}
 
+	.copyright {
+		font-size: 1.5vw;
+	}
+
+	.copyright-text {
+		flex: 6;
+	}
 } 
-
 /* ------------------------------------------ */
 /* ------------------------------------------ */
 /* ----- CALENDAR PAGE WORK BEGINS HERE ----- */
